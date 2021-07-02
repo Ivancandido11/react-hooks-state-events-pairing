@@ -39,7 +39,7 @@ const Header = ({
     <button onClick={handleUpvoteClick} id="upvotes">{upvote} 👍</button>
     <button onClick={handleDownvoteClick} id="downvotes">{downvote} 👎</button>
     <br />
-    <button onClick={handleHideCommentsClick} id="dhideComments">{isOn ? "Show Comments" : "Hide Comments"}</button>
+    <button onClick={handleHideCommentsClick} id="hideComments">{isOn ? "Show Comments" : "Hide Comments"}</button>
     {isOn ? null : <Comments comments={comments}/>}
   </div>
   )
