@@ -11,13 +11,14 @@ const UpdateComment = ({comment}) => {
     setDownvote(downvote + 1)
   }
 
-return (
-  <div key={comment.id}>
-  <h3>{comment.user}</h3>
-  <p>{comment.comment}</p>
-<button onClick ={handleUpVoteClick} id={comment.id}>{upvote}👍</button>
-<button onClick ={handleDownVoteClick} id={comment.id}>{downvote}👎</button>
-</div>
-)}
+  return (
+    <div key={comment.id}>
+      <h3>{comment.user}</h3>
+      <p>{comment.comment}</p>
+      <button onClick ={handleUpVoteClick} id={comment.id}>{upvote}👍</button>
+      <button onClick ={handleDownVoteClick} id={comment.id}>{downvote}👎</button>
+    </div>
+  )
+}
 
 export default UpdateComment
