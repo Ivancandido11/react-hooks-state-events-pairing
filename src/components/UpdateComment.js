@@ -4,12 +4,8 @@ const UpdateComment = ({comment}) => {
   const [upvote, setUpvote] = useState(0)
   const [downvote, setDownvote] = useState(0)
 
-  const handleUpVoteClick = () => { 
-    setUpvote(upvote + 1)
-  }
-  const handleDownVoteClick = () => { 
-    setDownvote(downvote + 1)
-  }
+  const handleUpVoteClick = () => setUpvote(upvote + 1)
+  const handleDownVoteClick = () => setDownvote(downvote + 1)
 
   return (
     <div key={comment.id}>
